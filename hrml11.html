@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#ff5200">
+  <meta name="description" content="Discover restaurants, order food, and find your favourites with Swiggy.">
+  <title>Order Food Online from India's Best Restaurants | Swiggy</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style11.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="#" aria-label="Swiggy home">
+        <svg class="brand-mark" viewBox="0 0 48 52" role="img" aria-label="Swiggy">
+          <path d="M12.2 4.5c1.8-1.6 4.4-1.4 6 .4l14 16.4-4.1 3.5L12 10.1c-1.5-1.7-1.4-4 .2-5.6Zm17.5 5.7c1.9-1.3 4.4-.7 5.7 1.2l8.4 12.9-4.7 3.1-8.3-12.8c-1.1-1.7-.7-3.3-1.1-4.4Zm-27.4 18h42.1c-.2 13.4-8.1 21-20.9 21C10.7 49.2 2.4 41.5 2.3 28.2Z" fill="currentColor"/>
+        </svg>
+        <span class="brand-name">Swiggy</span>
+      </a>
+
+      <div class="location-picker">
+        <span class="location-pin" aria-hidden="true">
+          <svg viewBox="0 0 24 24"><path d="M12 22s8-7.2 8-13a8 8 0 1 0-16 0c0 5.8 8 13 8 13Zm0-10.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5Z"/></svg>
+        </span>
+        <span class="location-copy"><strong>Other</strong><span>Choose your location</span></span>
+        <span class="chevron" aria-hidden="true"></span>
+      </div>
+
+      <nav class="main-nav" aria-label="Main navigation">
+        <a href="#restaurants" class="nav-link">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.8" cy="10.8" r="6.8"/><path d="m16 16 5 5"/></svg><span>Search</span>
+        </a>
+        <a href="#offers" class="nav-link offers-link">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 13 13 20l-9-9V4h7l9 9Z"/><circle cx="8" cy="8" r="1"/></svg><span>Offers</span><b>NEW</b>
+        </a>
+        <a href="#footer" class="nav-link">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M9.6 9a2.5 2.5 0 1 1 4.7 1.1c-.9 1.3-2.3 1.5-2.3 3.2M12 17.5v.1"/></svg><span>Help</span>
+        </a>
+        <a href="#signin" class="nav-link" id="signin">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="3.5"/><path d="M5 21a7 7 0 0 1 14 0"/></svg><span>Sign In</span>
+        </a>
+        <a href="#cart" class="nav-link cart-link" id="cart">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 4h2l2.2 11.1a2 2 0 0 0 2 1.6h8.9a2 2 0 0 0 1.9-1.4L22 8H6"/><circle cx="10" cy="21" r="1"/><circle cx="18" cy="21" r="1"/></svg><span>Cart</span>
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Swiggy orange discovery hero -->
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-inner">
+        <img class="hero-food hero-food-left" src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?auto=format&amp;fit=crop&amp;w=700&amp;q=85" alt="" fetchpriority="high">
+        <img class="hero-food hero-food-right" src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&amp;fit=crop&amp;w=700&amp;q=85" alt="" fetchpriority="high">
+        <div class="hero-content">
+          <p class="eyebrow">Good food. Good mood.</p>
+          <h1 id="hero-title">Order food &amp; groceries.<br>Discover the best restaurants.</h1>
+          <p class="hero-subtitle">Everything you love, delivered to your door.</p>
+          <form class="search-form" action="#" role="search">
+            <label class="sr-only" for="delivery-location">Enter your delivery location</label>
+            <div class="search-location">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 22s8-7.2 8-13a8 8 0 1 0-16 0c0 5.8 8 13 8 13Zm0-10.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5Z"/></svg>
+              <input id="delivery-location" type="text" placeholder="Enter your delivery location">
+              <span class="chevron" aria-hidden="true"></span>
+            </div>
+            <label class="sr-only" for="restaurant-search">Search for restaurant, item or more</label>
+            <div class="search-query">
+              <input id="restaurant-search" type="search" placeholder="Search for restaurant, item or more">
+              <button type="submit" aria-label="Search">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.8" cy="10.8" r="6.8"/><path d="m16 16 5 5"/></svg>
+              </button>
+            </div>
+          </form>
+          <div class="hero-trust"><span class="trust-stars" aria-hidden="true">★★★★★</span><span>India's favourite food delivery app</span></div>
+        </div>
+        <span class="hero-spark hero-spark-one" aria-hidden="true">✦</span>
+        <span class="hero-spark hero-spark-two" aria-hidden="true">✦</span>
+        <span class="hero-spark hero-spark-three" aria-hidden="true">✧</span>
+      </div>
+    </section>
+
+    <div class="page-content">
+      <section class="section category-section" id="categories" aria-labelledby="category-title">
+        <div class="section-heading">
+          <div><p class="section-kicker">A little something for everyone</p><h2 id="category-title">What's on your mind?</h2></div>
+          <div class="round-arrows" aria-hidden="true"><span>‹</span><span>›</span></div>
+        </div>
+        <div class="category-grid">
+          <a class="category-card" href="#restaurants"><img src="https://images.unsplash.com/photo-1579751626657-72bc17010498?auto=format&amp;fit=crop&amp;w=320&amp;q=82" alt="Golden-crust pizza"><span>Pizza</span></a>
+          <a class="category-card" href="#restaurants"><img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&amp;fit=crop&amp;w=320&amp;q=82" alt="Juicy burger"><span>Burgers</span></a>
+          <a class="category-card" href="#restaurants"><img src="https://images.unsplash.com/photo-1589302168068-964664d93dc0?auto=format&amp;fit=crop&amp;w=320&amp;q=82" alt="Biryani with spices"><span>Biryani</span></a>
+          <a class="category-card" href="#restaurants"><img src="https://images.unsplash.com/photo-1512058564366-18510be2db19?auto=format&amp;fit=crop&amp;w=320&amp;q=82" alt="Colourful noodles"><span>Chinese</span></a>
+          <a class="category-card" href="#restaurants"><img src="https://images.unsplash.com/photo-1546833999-b9f581a1996d?auto=format&amp;fit=crop&amp;w=320&amp;q=82" alt="North Indian meal"><span>North Indian</span></a>
+          <a class="category-card" href="#restaurants"><img src="https://images.unsplash.com/photo-1630383249896-424e482df921?auto=format&amp;fit=crop&amp;w=320&amp;q=82" alt="Crispy dosa"><span>South Indian</span></a>
+          <a class="category-card" href="#restaurants"><img src="https://images.unsplash.com/photo-1563805042-7684c019e1cb?auto=format&amp;fit=crop&amp;w=320&amp;q=82" alt="Sweet dessert selection"><span>Desserts</span></a>
+          <a class="category-card" href="#restaurants"><img src="https://images.unsplash.com/photo-1601050690597-df0568f70950?auto=format&amp;fit=crop&amp;w=320&amp;q=82" alt="Freshly made rolls"><span>Rolls</span></a>
+          <a class="category-card" href="#restaurants"><img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&amp;fit=crop&amp;w=320&amp;q=82" alt="Chocolate cake"><span>Cakes</span></a>
+          <a class="category-card" href="#restaurants"><img src="https://images.unsplash.com/photo-1497034825429-c343d7c6a68f?auto=format&amp;fit=crop&amp;w=320&amp;q=82" alt="Ice cream scoops"><span>Ice Cream</span></a>
+        </div>
+      </section>
+
+      <section class="section restaurants-section" id="restaurants" aria-labelledby="restaurant-title">
+        <div class="section-heading">
+          <div><p class="section-kicker">Picked just for you</p><h2 id="restaurant-title">Top restaurant chains in your city</h2></div>
+          <div class="round-arrows" aria-hidden="true"><span>‹</span><span>›</span></div>
+        </div>
+        <div class="restaurant-grid">
+          <article class="restaurant-card">
+            <a class="restaurant-photo" href="#restaurants"><img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&amp;fit=crop&amp;w=720&amp;q=85" alt="Fresh pizza with basil"><span class="photo-shade"></span><span class="photo-offer">ITEMS AT ₹99</span></a>
+            <div class="restaurant-info"><h3>Pizza Hut</h3><div class="rating-line"><span class="rating">★ 4.2</span><span>•</span><span>25–30 mins</span></div><p>Pizza, Italian, Fast Food</p><p class="restaurant-area">Indiranagar</p></div>
+          </article>
+          <article class="restaurant-card">
+            <a class="restaurant-photo" href="#restaurants"><img src="https://images.unsplash.com/photo-1552566626-52f8b828add9?auto=format&amp;fit=crop&amp;w=720&amp;q=85" alt="Warmly lit restaurant dining room"><span class="photo-shade"></span><span class="photo-offer">50% OFF UP TO ₹100</span></a>
+            <div class="restaurant-info"><h3>Chinese Wok</h3><div class="rating-line"><span class="rating">★ 4.3</span><span>•</span><span>20–25 mins</span></div><p>Chinese, Asian, Tibetan</p><p class="restaurant-area">Koramangala</p></div>
+          </article>
+          <article class="restaurant-card">
+            <a class="restaurant-photo" href="#restaurants"><img src="https://images.unsplash.com/photo-1569718212165-3a8278d5f624?auto=format&amp;fit=crop&amp;w=720&amp;q=85" alt="Spicy noodles with fresh vegetables"><span class="photo-shade"></span><span class="photo-offer">₹125 OFF ABOVE ₹399</span></a>
+            <div class="restaurant-info"><h3>Chinese Kitchen</h3><div class="rating-line"><span class="rating">★ 4.1</span><span>•</span><span>30–35 mins</span></div><p>Chinese, Noodles, Momos</p><p class="restaurant-area">HSR Layout</p></div>
+          </article>
+          <article class="restaurant-card">
+            <a class="restaurant-photo" href="#restaurants"><img src="https://images.unsplash.com/photo-1565299507177-b0ac66763828?auto=format&amp;fit=crop&amp;w=720&amp;q=85" alt="Burger with crisp lettuce and tomato"><span class="photo-shade"></span><span class="photo-offer">BUY 1 GET 1</span></a>
+            <div class="restaurant-info"><h3>Burger King</h3><div class="rating-line"><span class="rating">★ 4.4</span><span>•</span><span>20–25 mins</span></div><p>Burgers, American, Fast Food</p><p class="restaurant-area">MG Road</p></div>
+          </article>
+          <article class="restaurant-card">
+            <a class="restaurant-photo" href="#restaurants"><img src="https://images.unsplash.com/photo-1565557623262-b51c2513a641?auto=format&amp;fit=crop&amp;w=720&amp;q=85" alt="Aromatic biryani served with herbs"><span class="photo-shade"></span><span class="photo-offer">FLAT ₹100 OFF</span></a>
+            <div class="restaurant-info"><h3>Meghana Foods</h3><div class="rating-line"><span class="rating">★ 4.5</span><span>•</span><span>30–35 mins</span></div><p>Biryani, Andhra, North Indian</p><p class="restaurant-area">Jayanagar</p></div>
+          </article>
+          <article class="restaurant-card">
+            <a class="restaurant-photo" href="#restaurants"><img src="https://images.unsplash.com/photo-1574071318508-1cdbab80d002?auto=format&amp;fit=crop&amp;w=720&amp;q=85" alt="Thin-crust pizza fresh from the oven"><span class="photo-shade"></span><span class="photo-offer">₹150 OFF ABOVE ₹499</span></a>
+            <div class="restaurant-info"><h3>Oven Story Pizza</h3><div class="rating-line"><span class="rating">★ 4.1</span><span>•</span><span>25–30 mins</span></div><p>Pizza, Italian, Desserts</p><p class="restaurant-area">Whitefield</p></div>
+          </article>
+          <article class="restaurant-card">
+            <a class="restaurant-photo" href="#restaurants"><img src="https://images.unsplash.com/photo-1603894584373-5ac82b2ae398?auto=format&amp;fit=crop&amp;w=720&amp;q=85" alt="Indian curry and freshly baked naan"><span class="photo-shade"></span><span class="photo-offer">50% OFF UP TO ₹100</span></a>
+            <div class="restaurant-info"><h3>Punjab Grill</h3><div class="rating-line"><span class="rating">★ 4.4</span><span>•</span><span>35–40 mins</span></div><p>North Indian, Mughlai</p><p class="restaurant-area">UB City</p></div>
+          </article>
+          <article class="restaurant-card">
+            <a class="restaurant-photo" href="#restaurants"><img src="https://images.unsplash.com/photo-1559847844-5315695dadae?auto=format&amp;fit=crop&amp;w=720&amp;q=85" alt="A selection of delicious restaurant dishes"><span class="photo-shade"></span><span class="photo-offer">FREE DELIVERY</span></a>
+            <div class="restaurant-info"><h3>Empire Restaurant</h3><div class="rating-line"><span class="rating">★ 4.3</span><span>•</span><span>25–30 mins</span></div><p>North Indian, Kebabs, Biryani</p><p class="restaurant-area">Brigade Road</p></div>
+          </article>
+        </div>
+        <a class="outline-cta" href="#city-links">See all restaurants <span aria-hidden="true">→</span></a>
+      </section>
+
+      <section class="offer-banner" id="offers" aria-label="Special Swiggy offers">
+        <div class="offer-copy"><span class="offer-label">SWIGGY SPECIAL</span><h2>More cravings.<br>More delicious deals.</h2><p>Good food tastes even better with an offer.</p><a href="#restaurants">Explore offers <span aria-hidden="true">→</span></a></div>
+        <div class="offer-image"><img src="https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&amp;fit=crop&amp;w=1000&amp;q=85" alt="A vibrant table spread with fresh food"></div>
+        <span class="offer-sticker" aria-hidden="true">YUM!<br><b>✓</b></span>
+      </section>
+
+      <section class="section discovery-section" aria-labelledby="discover-title">
+        <div class="section-heading"><div><p class="section-kicker">Good eats, close by</p><h2 id="discover-title">Discover food around you</h2></div></div>
+        <div class="discovery-grid">
+          <a href="#restaurants" class="discovery-tile"><span class="discovery-icon">🍴</span><span><strong>Food delivery</strong><small>From the best restaurants near you</small></span><b aria-hidden="true">↗</b></a>
+          <a href="#categories" class="discovery-tile"><span class="discovery-icon">🛍️</span><span><strong>Instamart</strong><small>Daily essentials, delivered fast</small></span><b aria-hidden="true">↗</b></a>
+          <a href="#offers" class="discovery-tile"><span class="discovery-icon">🍽️</span><span><strong>Dining out</strong><small>Make a day of eating well</small></span><b aria-hidden="true">↗</b></a>
+        </div>
+      </section>
+
+      <section class="city-discovery" id="city-links" aria-labelledby="city-title">
+        <div class="section-heading"><div><p class="section-kicker">Explore your neighbourhood</p><h2 id="city-title">Cities with food delivery</h2></div><a class="text-link" href="#footer">View all cities <span aria-hidden="true">→</span></a></div>
+        <div class="city-grid">
+          <a href="#restaurants">Order food online in Bangalore</a><a href="#restaurants">Order food online in Hyderabad</a>
+          <a href="#restaurants">Order food online in Mumbai</a><a href="#restaurants">Order food online in Chennai</a>
+          <a href="#restaurants">Order food online in Delhi</a><a href="#restaurants">Order food online in Pune</a>
+          <a href="#restaurants">Order food online in Kolkata</a><a href="#restaurants">Order food online in Ahmedabad</a>
+          <a href="#restaurants">Order food online in Chandigarh</a><a href="#restaurants">Order food online in Jaipur</a>
+          <a href="#restaurants">Order food online in Kochi</a><a href="#restaurants">Order food online in Lucknow</a>
+        </div>
+      </section>
+
+      <section class="popular-searches" aria-labelledby="popular-title">
+        <div class="section-heading"><div><p class="section-kicker">Your next favourite bite</p><h2 id="popular-title">Popular food searches</h2></div></div>
+        <div class="popular-tags"><a href="#restaurants">Biryani</a><a href="#restaurants">Pizza</a><a href="#restaurants">Burgers</a><a href="#restaurants">Cakes</a><a href="#restaurants">Dosa</a><a href="#restaurants">Momos</a><a href="#restaurants">Pasta</a><a href="#restaurants">Ice Cream</a><a href="#restaurants">South Indian</a><a href="#restaurants">Chinese food</a></div>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer" id="footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <a class="brand footer-logo" href="#" aria-label="Swiggy home">
+          <svg class="brand-mark" viewBox="0 0 48 52" aria-hidden="true"><path d="M12.2 4.5c1.8-1.6 4.4-1.4 6 .4l14 16.4-4.1 3.5L12 10.1c-1.5-1.7-1.4-4 .2-5.6Zm17.5 5.7c1.9-1.3 4.4-.7 5.7 1.2l8.4 12.9-4.7 3.1-8.3-12.8c-1.1-1.7-.7-3.3-1.1-4.4ZM2.3 28.2h42.1c-.2 13.4-8.1 21-20.9 21C10.7 49.2 2.4 41.5 2.3 28.2Z"/></svg><span class="brand-name">Swiggy</span>
+        </a>
+        <p>© 2026 Swiggy Limited</p>
+      </div>
+      <div class="footer-column"><h2>Company</h2><a href="#footer">About Us</a><a href="#footer">Swiggy Corporate</a><a href="#footer">Careers</a><a href="#footer">Team</a><a href="#footer">Swiggy One</a><a href="#footer">Swiggy Instamart</a></div>
+      <div class="footer-column"><h2>Contact us</h2><a href="#footer">Help &amp; Support</a><a href="#footer">Partner with us</a><a href="#footer">Ride with us</a><h2 class="footer-subheading">Legal</h2><a href="#footer">Terms &amp; Conditions</a><a href="#footer">Privacy Policy</a></div>
+      <div class="footer-column"><h2>We deliver to</h2><a href="#city-links">Bangalore</a><a href="#city-links">Gurgaon</a><a href="#city-links">Hyderabad</a><a href="#city-links">Delhi</a><a href="#city-links">Mumbai</a><a href="#city-links">Pune</a><a class="cities-count" href="#city-links">589 cities <span aria-hidden="true">⌄</span></a></div>
+      <div class="footer-download"><h2>For a better experience,<br>download the Swiggy app now</h2><a href="#footer" class="app-badge"><span aria-hidden="true">▶</span><span><small>GET IT ON</small><strong>Google Play</strong></span></a><a href="#footer" class="app-badge"><span aria-hidden="true">●</span><span><small>Download on the</small><strong>App Store</strong></span></a><div class="social-links"><a href="#footer" aria-label="Instagram">ig</a><a href="#footer" aria-label="Facebook">f</a><a href="#footer" aria-label="Pinterest">p</a><a href="#footer" aria-label="X">𝕏</a></div></div>
+    </div>
+    <div class="footer-bottom"><span>Delivering happiness, one order at a time.</span><span>Made with <b>♥</b> in India</span></div>
+  </footer>
+</body>
+</html>
